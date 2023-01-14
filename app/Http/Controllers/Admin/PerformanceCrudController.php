@@ -19,6 +19,36 @@ class PerformanceCrudController extends CrudController
     use \Backpack\CRUD\app\Http\Controllers\Operations\DeleteOperation;
     use \Backpack\CRUD\app\Http\Controllers\Operations\ShowOperation;
 
+    private function getFieldsData($show = FALSE) {
+        return [
+            [
+                'name'=> 'name_of_performance',
+                'label' => 'Name of Performance',
+                'type'=> 'text'
+            ],
+            [
+                'name' => 'performance_date',
+                'label' => 'Performance date',
+                'type' => 'datetime'
+            ],
+            [    // SelectMultiple = n-n relationship (with pivot table)
+                'label'     => "Venue",
+                'type'      => ($show ? "select": 'select_multiple'),
+                'name'      => 'venues', // the method that defines the relationship in your Model
+// optional
+                'entity'    => 'venues', // the method that defines the relationship in your Model
+                'model'     => "App\Models\Venue", // foreign key model
+                'attribute' => 'name_of_theatre', // foreign key attribute that is shown to user
+                'attribute' => 'location', // foreign key attribute that is shown to user
+                'attribute' => 'city', // foreign key attribute that is shown to user
+                'pivot'     => true, // on create&update, do you need to add/delete pivot table entries?
+            ]
+        ];
+    }
+
+
+
+
     /**
      * Configure the CrudPanel object. Apply settings to all operations.
      *

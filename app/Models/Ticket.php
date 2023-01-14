@@ -34,7 +34,10 @@ class Ticket extends Model
     | RELATIONS
     |--------------------------------------------------------------------------
     */
-
+    public function Performance()
+    {
+        return $this->belongsToMany(Tag::class, 'performance_ticket','performance_id', 'ticket_id');
+    }
     /*
     |--------------------------------------------------------------------------
     | SCOPES
