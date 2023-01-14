@@ -25,7 +25,7 @@ class TicketRequest extends FormRequest
     public function rules()
     {
         return [
-             'price' => 'required|min:5|max:255',
+             'price' => 'required|min:1|max:255',
              'type_of_ticket' => 'required|min:5|max:255'
         ];
     }
