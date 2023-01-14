@@ -4,12 +4,14 @@ namespace App\Models;
 
 use Backpack\CRUD\app\Models\Traits\CrudTrait;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Storage;
 
 class Performance extends Model
 {
     use CrudTrait;
-    use Illuminate\Support\Str;
-    use Illuminate\Support\Facades\Storage;
+
+
 
     /*
     |--------------------------------------------------------------------------
