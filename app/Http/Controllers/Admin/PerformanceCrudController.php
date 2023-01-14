@@ -42,7 +42,15 @@ class PerformanceCrudController extends CrudController
                 'attribute' => 'location', // foreign key attribute that is shown to user
                 'attribute' => 'city', // foreign key attribute that is shown to user
                 'pivot'     => true, // on create&update, do you need to add/delete pivot table entries?
+            ],
+            [
+                'label' => "Performance Image",
+                'name' => "image",
+                'type' => ($show ? 'view' : 'upload'),
+                'view' => 'partials/image',
+                'upload' => true,
             ]
+
         ];
     }
 
@@ -71,10 +79,9 @@ class PerformanceCrudController extends CrudController
      */
     protected function setupListOperation()
     {
-        CRUD::column('name_of_performance');
-        CRUD::column('performance_date');
-        CRUD::column('created_at');
-        CRUD::column('updated_at');
+        $this->crud->set('show.setFromDb', false);
+        $this->crud->addColumns($this->getFieldsData(TRUE));
+
 
 
 

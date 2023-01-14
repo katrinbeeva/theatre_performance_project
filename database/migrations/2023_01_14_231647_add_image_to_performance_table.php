@@ -5,8 +5,7 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
-{
-    /**
+{    /**
      * Run the migrations.
      *
      * @return void
@@ -14,7 +13,7 @@ return new class extends Migration
     public function up()
     {
         Schema::table('performance', function (Blueprint $table) {
-            //
+            $table->string('image',255)->nullable();
         });
     }
 
@@ -26,7 +25,7 @@ return new class extends Migration
     public function down()
     {
         Schema::table('performance', function (Blueprint $table) {
-            //
+            $table->dropColumn('image');
         });
     }
 };
