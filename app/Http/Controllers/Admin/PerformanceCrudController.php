@@ -59,6 +59,8 @@ class PerformanceCrudController extends CrudController
         CRUD::setModel(\App\Models\Performance::class);
         CRUD::setRoute(config('backpack.base.route_prefix') . '/performance');
         CRUD::setEntityNameStrings('performance', 'performances');
+
+        $this->crud->addFields($this->getFieldsData());
     }
 
     /**
@@ -73,6 +75,8 @@ class PerformanceCrudController extends CrudController
         CRUD::column('performance_date');
         CRUD::column('created_at');
         CRUD::column('updated_at');
+
+
 
 
 
@@ -112,5 +116,14 @@ class PerformanceCrudController extends CrudController
     protected function setupUpdateOperation()
     {
         $this->setupCreateOperation();
+    }
+
+    protected function setupShowOperation()
+    {
+        // by default the Show operation will try to show all columns in the db table,
+        // but we can easily take over, and have full control of what columns are shown,
+        // by changing this config for the Show operation
+        $this->crud->set('show.setFromDb', false);
+        $this->crud->addColumns($this->getFieldsData(TRUE));
     }
 }
