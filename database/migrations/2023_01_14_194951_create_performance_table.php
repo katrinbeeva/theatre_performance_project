@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('name_of_performance');
             $table->dateTime('performance_date');
-            $table->timestamps();
+            $table->timestamps(); //created at/deleted at
         });
     }
 
