@@ -50,7 +50,7 @@ class Performance extends Model
     {
         $attribute_name = "image";
         // destination path relative to the disk above
-        $destination_path = "articles";
+        $destination_path = "performance";
 
         // if the image was erased
         if ($value==null) {
@@ -76,7 +76,7 @@ class Performance extends Model
 
     public function venues()
     {
-        return $this->belongsToMany(Venue::class, 'performance_venue','performance_id', 'venue_id');
+        return $this->belongsToMany(Venue::class, 'performance_venues','performance_id', 'venues_id');
     }
 
     /*

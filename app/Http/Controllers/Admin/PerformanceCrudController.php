@@ -103,8 +103,12 @@ class PerformanceCrudController extends CrudController
     protected function setupCreateOperation()
     {
         CRUD::setValidation(PerformanceRequest::class);
+
         CRUD::field('name_of_performance');
         CRUD::field('performance_date');
+        CRUD::field('image');
+        CRUD::field('venue_id');
+
 
 
         /**
