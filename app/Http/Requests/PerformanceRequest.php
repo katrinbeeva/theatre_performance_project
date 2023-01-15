@@ -26,8 +26,9 @@ class PerformanceRequest extends FormRequest
     {
         return [
              'name_of_performance' => 'required|min:3|max:255',
-             'performance_date' => 'required|min:5|max:255',
-             'venue_id' => 'required|min:5|max:255',
+             'performance_date' => 'required|min:2|max:255',
+             'venue_id' => 'required|min:3|max:255',
+             'image' => 'required|mimetypes:png,jpeg,jpg,webp.jfif'
 
         ];
     }
