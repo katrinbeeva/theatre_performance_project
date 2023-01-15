@@ -15,7 +15,9 @@
                 <div class="col-sm-6">
                     <div class="single-about-us">
                         <div class="about-us-img">
+                            @if(isset($entry->image))
                             <img src="{{$imgURL}}" alt="about images">
+                            @endif
                         </div><!--/.about-us-img-->
                     </div><!--/.single-about-us-->
                 </div><!--/.col-->
