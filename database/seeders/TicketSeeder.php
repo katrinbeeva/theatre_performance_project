@@ -14,6 +14,19 @@ class TicketSeeder extends Seeder
      */
     public function run()
     {
-        //
+        DB::table('tickets')->insert([
+            [
+                'type_of_ticket'=> 'Детски',
+                'price' => '5.00 лв.',
+            ],
+            [
+                'type_of_ticket'=> 'Студентски',
+                'price' => '6.00 лв.',
+            ],
+            [
+                'type_of_ticket'=> 'За възрастни',
+                'price' => '7.00 лв.',
+            ],
+        ]);
     }
 }
