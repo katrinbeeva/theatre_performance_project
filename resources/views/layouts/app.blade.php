@@ -24,36 +24,35 @@
     <link rel="shortcut icon" type="image/icon" href="assets/images/logo/favicon.png"/>
 
     <!--font-awesome.min.css-->
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{asset('assets/css')}}/font-awesome.min.css">
 
     <!--linear icon css-->
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
-
     <!--animate.css-->
-    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="{{asset('assets/css')}}/animate.css">
 
     <!--hover.css-->
-    <link rel="stylesheet" href="assets/css/hover-min.css">
+    <link rel="stylesheet" href="{{asset('assets/css')}}/hover-min.css">
 
     <!--vedio player css-->
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="{{asset('assets/css')}}/magnific-popup.css">
 
     <!--owl.carousel.css-->
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link href="assets/css/owl.theme.default.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="{{asset('assets/css')}}/owl.carousel.min.css">
+    <link href="{{asset('assets/css')}}/owl.theme.default.min.css" rel="stylesheet"/>
 
 
     <!--bootstrap.min.css-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{asset('assets/css')}}/bootstrap.min.css">
 
     <!-- bootsnav -->
-    <link href="assets/css/bootsnav.css" rel="stylesheet"/>
+    <link href="{{asset('assets/css')}}/bootsnav.css" rel="stylesheet"/>
 
     <!--style.css-->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="{{asset('assets/css')}}/style.css">
 
     <!--responsive.css-->
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="{{asset('assets/css')}}/responsive.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
