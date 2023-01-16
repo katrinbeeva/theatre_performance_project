@@ -194,7 +194,7 @@
                         <li class="smooth-menu">
                             <a href="#home">Home</a>
                         </li>
-                        <li class="smooth-menu"><a href="#about">About</a></li>
+                        <li class="smooth-menu"><a href="/admin">About</a></li>
                         <li class="smooth-menu"><a href="#service">Service</a></li>
                         <li class="smooth-menu"><a href="#project">Project</a></li>
                         <li class="smooth-menu"><a href="#team">Team</a></li>

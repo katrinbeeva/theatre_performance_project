@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\PerformanceViewController;
 use App\Http\Controllers\VenueViewController;
+use App\Http\Controllers\TicketViewController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,4 +20,5 @@ use App\Http\Controllers\VenueViewController;
 Route::get('/', [IndexController::class, 'index']);
 Route::get('/performance_view',[PerformanceViewController::class,'performance']);
 Route::get('/venues_view',[VenueViewController::class,'venues']);
+Route::get('/tickets_view',[TicketViewController::class,'tickets']);
 
