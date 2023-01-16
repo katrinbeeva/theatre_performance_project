@@ -176,15 +176,18 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#home">Home</a>
+                        <a href="/">Home</a>
                     </li>
                     <li><a href="/performance_view">Performance</a></li>
                     <li><a href="/venues_view">Venues</a></li>
                     <li><a href="/tickets_view">Tickets</a></li>
                     <li><a href="/admin">SignUp</a></li>
                     <li class="search">
-                        <form action="">
-                            <input type="text" name="search" placeholder="Search....">
+                        <form action="{{ route('performance.search') }}" method="GET">
+                            <label for="search" class="sr-only">
+                                Search
+                            </label>
+                            <input type="text" name="s" placeholder="Search....">
                             <a href="#">
                                 <span class="lnr lnr-magnifier"></span>
                             </a>
