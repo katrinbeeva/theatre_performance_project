@@ -30,7 +30,7 @@ class PerformanceViewController extends Controller
     public function search(Request $request)
     {
         $performance = DB::table('performance')->select('name_of_performance','performance_date')->get();
-        $venues = DB::table('venues')->select('name_of_theatre','location', 'city')->get();
+       $venues = DB::table('venues')->select('name_of_theatre','location', 'city')->get();
         $tickets = DB::table('tickets')->select('type_of_ticket', 'price')->get();
 
         $searchStr = $request->get('s');

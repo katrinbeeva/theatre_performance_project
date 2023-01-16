@@ -11,7 +11,7 @@ class TicketViewController extends Controller
 {
     public function tickets()
     {
-        $tickets = DB::table('tickets')->select('price')->get();
+        $tickets = DB::table('tickets')->select('price','type_of_ticket')->get();
         return (
         view('tickets_view', ['tickets' => $tickets]));
     }

@@ -11,7 +11,7 @@ class VenueViewController extends Controller
 {
     public function venues()
     {
-        $venues = DB::table('venues')->select('name_of_theatre')->get();
+        $venues = DB::table('venues')->select('name_of_theatre', 'location','city')->get();
         return (
         view('venues_view', ['venues' => $venues]));
     }

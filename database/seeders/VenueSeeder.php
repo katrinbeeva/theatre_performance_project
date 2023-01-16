@@ -4,6 +4,8 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+
 
 class VenueSeeder extends Seeder
 {
@@ -14,7 +16,7 @@ class VenueSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('performance')->insert([
+        DB::table('venues')->insert([
             [
                 'name_of_theatre'=> 'Народен театър "Иван Вазов"',
                 'location' => 'ул. „Дякон Игнатий“ 5, 1000 София център',
@@ -64,6 +66,16 @@ class VenueSeeder extends Seeder
                 'name_of_theatre'=> 'Театър Българска армия',
                 'location' => 'ул. „Георги С. Раковски“ 98, 1000 София център',
                 'city'=>'София'
+            ],
+            [
+                'name_of_theatre'=> 'Музикално - драматичен театър',
+                'location' => 'бул. „Васил Левски“ 4, 5000 Велико Търново Център',
+                'city'=>'Велико Търново'
+            ],
+            [
+                'name_of_theatre'=> 'Летен театър',
+                'location' => 'бул. „Васил Левски“ 4, 5000',
+                'city'=>'Велико Търново'
             ],
         ]);
 
