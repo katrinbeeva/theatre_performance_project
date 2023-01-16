@@ -76,7 +76,7 @@ class Performance extends Model
 
     public function venues()
     {
-        return $this->belongsToMany(Venue::class, 'performance_venues','performance_id', 'venues_id');
+        return $this->belongsToMany(Venue::class, 'performances_venues','performance_id', 'venues_id');
     }
 
     /*

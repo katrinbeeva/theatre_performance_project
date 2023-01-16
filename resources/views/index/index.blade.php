@@ -137,13 +137,13 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="smooth-menu">
+                    <li>
                         <a href="#home">Home</a>
                     </li>
-                    <li class="smooth-menu"><a href="/admin">Performance</a></li>
-                    <li class="smooth-menu"><a href="#service">Venues</a></li>
-                    <li class="smooth-menu"><a href="#project">Tickets</a></li>
-                    <li class="smooth-menu"><a href="#team">SignUp</a></li>
+                    <li><a href="/performance_view">Performance</a></li>
+                    <li><a href="/venues_view">Venues</a></li>
+                    <li><a href="/tickets_view">Tickets</a></li>
+                    <li><a href="/admin">SignUp</a></li>
                     <li class="search">
                         <form action="">
                             <input type="text" name="search" placeholder="Search....">
