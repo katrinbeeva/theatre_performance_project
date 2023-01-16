@@ -24,7 +24,6 @@
         </div><!--/.about-us-content-->
     </div><!--/.container-->
 @endsection
-
 @section('header')
     <div class="container">
         <div class="header-left">

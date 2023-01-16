@@ -179,8 +179,8 @@
                         <a href="#home">Home</a>
                     </li>
                     <li><a href="/performance_view">Performance</a></li>
-                    <li><a href="#venues_view">Venues</a></li>
-                    <li><a href="#tickets_view">Tickets</a></li>
+                    <li><a href="/venues_view">Venues</a></li>
+                    <li><a href="/tickets_view">Tickets</a></li>
                     <li><a href="/admin">SignUp</a></li>
                     <li class="search">
                         <form action="">

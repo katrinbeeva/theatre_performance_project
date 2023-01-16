@@ -31,7 +31,7 @@
                                     <tbody>
                                     @foreach($venues as $venue)
                                         <tr>
-                                            <td>{{$venue->type_of_ticket}}</td>
+                                            <td>{{$venue->name_of_theatre}}</td>
                                             <td>{{$venue->location}}</td>
                                             <td>{{$venue->city}}</td>
                                         </tr>
@@ -161,7 +161,7 @@
                     <li>
                         <a href="/">Home</a>
                     </li>
-                    <li><a href="/admin">Performance</a></li>
+                    <li><a href="/performance_view">Performance</a></li>
                     <li><a href="/venues_view">Venues</a></li>
                     <li><a href="/tickets_view">Tickets</a></li>
                     <li><a href="/admin">SignUp</a></li>
