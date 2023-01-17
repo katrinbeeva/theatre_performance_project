@@ -265,5 +265,11 @@
                     <li ><a href="#">legal</a></li>
                     <li ><a href="#">sitemap</a></li>
                     <li ><a href="#">privacy policy</a></li>
-
-</div>@endsection
+                </ul>
+            </div><!-- /.foot-menu-->
+        </div><!--/.col-->
+    </div><!--/.row-->
+    <div id="scroll-Top">
+        <i class="fa fa-angle-double-up return-to-top" id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
+    </div><!--/.scroll-Top-->
+@endsection

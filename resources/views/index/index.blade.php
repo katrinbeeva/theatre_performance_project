@@ -170,14 +170,15 @@
                     <div class="hm-foot-title ">
                         <div class="logo">
                             <a href="index.html">
-                                <h2 style = color:white>Сълза и смях</h2>
+                                <h2 style = color:white>Театър</h2>
                             </a>
                         </div><!-- /.logo-->
                     </div><!--/.hm-foot-title-->
                     <div class="hm-foot-para">
-                        <p>
-                            Lorem ipsum dolor sit amt conetur adcing elit. Sed do eiusod tempor utslr. Ut laboris nisi ut aute irure dolor in rein velit esse.
-                        </p>
+                        <p>"Аплаузите пареха ръцете,<br>
+                            а огънят, жарава бе в душата.<br>
+                            Едно обикновено представление<br>
+                            разкриваше магията ТЕАТЪР..."</p>
                     </div><!--/.hm-foot-para-->
                     <div class="hm-foot-icon">
                         <ul>
@@ -196,12 +197,11 @@
                     </div><!--/.hm-foot-title-->
                     <div class="footer-menu ">
                         <ul class="">
-                            <li><a href="index.html" >Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="services.html">Service</a></li>
-                            <li><a href="portfolio.html">Portfolio</a></li>
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="contact.html">Contact us</a></li>
+                            <li><a href="/" >Начална страница</a></li>
+                            <li><a href="/performance_view">Представления</a></li>
+                            <li><a href="/venues_view">Места за провеждане</a></li>
+                            <li><a href="/tickets_view">Билети</a></li>
+                            <li><a href="/admin">Регистрирай се</a></li>
                         </ul>
                     </div><!-- /.footer-menu-->
                 </div><!--/.hm-footer-widget-->
@@ -209,55 +209,28 @@
             <div class=" col-md-3 col-sm-6 col-xs-12">
                 <div class="hm-footer-widget">
                     <div class="hm-foot-title">
-                        <h4>from the news</h4>
-                    </div><!--/.hm-foot-title-->
-                    <div class="hm-para-news">
-                        <a href="blog_single.html">
-                            The Pros and Cons of Starting an Online Business.
-                        </a>
-                        <span>12th June 2017</span>
-                    </div><!--/.hm-para-news-->
-                    <div class="footer-line">
-                        <div class="border-bottom"></div>
+                        <img src="https://yt3.googleusercontent.com/ytc/AMLnZu85CAqWR5Qc43zkQ3uxDyJJl_lT9jgeVysBDhDG=s900-c-k-c0x00ffffff-no-rj" alt="VTU">
                     </div>
-                    <div class="hm-para-news">
-                        <a href="blog_single.html">
-                            The Pros and Cons of Starting an Online Business.
-                        </a>
-                        <span>12th June 2017</span>
-                    </div><!--/.hm-para-news-->
                 </div><!--/.hm-footer-widget-->
             </div><!--/.col-->
             <div class=" col-md-3 col-sm-6  col-xs-12">
                 <div class="hm-footer-widget">
                     <div class="hm-foot-title">
-                        <h4> Our Newsletter</h4>
-                    </div><!--/.hm-foot-title-->
-                    <div class="hm-foot-para">
-                        <p class="para-news">
-                            Subscribe to our newsletter to get the latest News and offers..
-                        </p>
-                    </div><!--/.hm-foot-para-->
-                    <div class="hm-foot-email">
-                        <div class="foot-email-box">
-                            <input type="text" class="form-control" placeholder="Email Address">
-                        </div><!--/.foot-email-box-->
-                        <div class="foot-email-subscribe">
-                            <button type="button" >go</button>
-                        </div><!--/.foot-email-icon-->
+                        <img src="https://scontent.fsof11-1.fna.fbcdn.net/v/t39.30808-6/315051662_2257076807787358_5705695343087107995_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=MEJrvHM4l-oAX9Rpzcd&_nc_ht=scontent.fsof11-1.fna&oh=00_AfC4v4XfFv9pEeHDXxpaAvaKBllgTg3Bpz4X-VaJB4Hd5w&oe=63CC1FAC" alt="KB">
                     </div><!--/.hm-foot-email-->
                 </div><!--/.hm-footer-widget-->
             </div><!--/.col-->
         </div><!--/.row-->
     </div><!--/.hm-footer-details-->
-</div>@endsection
+</div><!-- /.container -->
+@endsection
 @section('footer-copyright') <div class="container">
     <div class="row">
         <div class="col-sm-7">
             <div class="foot-copyright pull-left">
                 <p>
                     &copy; All Rights Reserve
-                    <a href="https://www.themesine.com">ThemeSINE</a>
+                    <a href="https://www.themesine.com">Театър</a>
                 </p>
             </div><!--/.foot-copyright-->
         </div><!--/.col-->
@@ -275,4 +248,4 @@
     <div id="scroll-Top">
         <i class="fa fa-angle-double-up return-to-top" id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
     </div><!--/.scroll-Top-->
-</div>@endsection
+@endsection
