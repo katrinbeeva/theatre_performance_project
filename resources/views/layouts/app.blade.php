@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link href="assets/css/additional.css" rel="stylesheet">
 
     <!-- TITLE OF SITE -->
     <title>laravel</title>

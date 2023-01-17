@@ -7,16 +7,18 @@
                 <div class="col-sm-6">
                     <div class="single-about-us">
                         <div class="about-us-txt">
-                            <h2>Театрални представления</h2>
+                            <h2>Театрални представления</h2><br><br><br><br>
+                            <h2>"Аплаузите пареха ръцете,<br>
+                                а огънят, жарава бе в душата.<br>
+                                Едно обикновено представление<br>
+                                разкриваше магията ТЕАТЪР..."</h2>
                         </div><!--/.about-us-txt-->
                     </div><!--/.single-about-us-->
                 </div><!--/.col-->
                 <div class="col-sm-6">
                     <div class="single-about-us">
                         <div class="about-us-img">
-                            @if(isset($entry->image))
-                            <img src="{{$imgURL}}" alt="about images">
-                            @endif
+                            <img src="https://m.netinfo.bg/media/images/32869/32869428/991-ratio-teatyr.jpg" alt="photo">
                         </div><!--/.about-us-img-->
                     </div><!--/.single-about-us-->
                 </div><!--/.col-->
@@ -129,7 +131,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="index.html">
-                    <img src="assets/images/logo/logo.png" alt="logo">
+                    <h2 style = color:white>Театър</h2>
                 </a>
             </div><!--/.navbar-header -->
 
@@ -144,8 +146,12 @@
                     <li><a href="/tickets_view">Билети</a></li>
                     <li><a href="/admin">Регистрирай се</a></li>
                     <li class="search">
-                        <form action="">
-                            <input type="text" name="search" placeholder="Search....">
+                        <form action="/performance" method="GET">
+
+                            <label for="search" class="sr-only">
+                                Search
+                            </label>
+                            <input type="text" name="s" placeholder="Търси....">
                             <a href="#">
                                 <span class="lnr lnr-magnifier"></span>
                             </a>
@@ -164,7 +170,7 @@
                     <div class="hm-foot-title ">
                         <div class="logo">
                             <a href="index.html">
-                                <img src="assets/images/logo/logo.png" alt="logo" />
+                                <h2 style = color:white>Сълза и смях</h2>
                             </a>
                         </div><!-- /.logo-->
                     </div><!--/.hm-foot-title-->

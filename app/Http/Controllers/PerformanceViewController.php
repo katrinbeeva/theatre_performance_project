@@ -13,9 +13,9 @@ class PerformanceViewController extends Controller
 {
     public function venues()
     {
-        $venues = DB::table('venues')->select('name_of_performance')->get();
+        $venuess = DB::table('venues')->select('name_of_performance')->get();
         return (
-        view('venues_view', ['venues' => $venues]));
+        view('venues_view', ['venues' => $venuess]));
     }
 
 
@@ -28,9 +28,9 @@ class PerformanceViewController extends Controller
 
     public function search(Request $request)
     {
-      //  $performances = DB::table('performance')->select('name_of_performance','performance_date')->get();
+       // $performances = DB::table('performance')->select('name_of_performance','performance_date')->get();
        $venues = DB::table('venues')->select('name_of_theatre','location', 'city')->get();
-      //  $tickets = DB::table('tickets')->select('type_of_ticket', 'price')->get();
+     //  $tickets = DB::table('tickets')->select('type_of_ticket', 'price')->get();
 
         $searchStr = $request->get('s');
         $performances = Performance::orWhere('name_of_performance', 'LIKE', '%' . $searchStr . '%')

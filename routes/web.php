@@ -17,11 +17,12 @@ use App\Http\Controllers\TicketViewController;
 |
 */
 
+Route::get('/performance', [PerformanceViewController::class,'search'])->name('search');
+
 Route::get('/', [IndexController::class, 'index']);
 Route::get('/performance_view',[PerformanceViewController::class,'performance']);
 Route::get('/venues_view',[VenueViewController::class,'venues']);
 Route::get('/tickets_view',[TicketViewController::class,'tickets']);
 
 
-//Route::get('/performance', [PerformanceViewController::class,'search'])->name('performance.search');
 

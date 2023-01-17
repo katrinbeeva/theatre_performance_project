@@ -4,18 +4,7 @@
     <div class="container">
         <div class="about-us-content">
             <div class="row">
-                <div class="col-sm-6">
-                    <div class="single-about-us">
-                        <div class="about-us-txt">
-                            <h2>Представления</h2>
-                        </div><!--/.about-us-txt-->
-                    </div><!--/.single-about-us-->
-                </div><!--/.col-->
-                <div class="col-sm-6">
-                    <div class="single-about-us">
-                        <div class="about-us-img">
-                            <div class="container">
-                                <table class="styled-table">
+                <table class="styled-table">
                                     <style>
                                         table, th, td {
                                             border: 1px solid black;
@@ -40,7 +29,16 @@
                                             <td>
                                                 @foreach($performance->venues as $venue)
                                                     {{ $venue->name_of_theatre}}
+
+                                                @endforeach
+                                            </td>
+                                            <td>
+                                                @foreach($performance->venues as $venue)
                                                     {{ $venue->location }}
+                                                @endforeach
+                                            </td>
+                                            <td>
+                                                @foreach($performance->venues as $venue)
                                                     {{ $venue->city }}
                                                 @endforeach
                                             </td>
@@ -48,10 +46,6 @@
                                     @endforeach
                                     </tbody>
                                 </table>
-                            </div><!--/.container<-->
-                        </div><!--/.about-us-img-->
-                    </div><!--/.single-about-us-->
-                </div><!--/.col-->
             </div><!--/.row-->
         </div><!--/.about-us-content-->
     </div><!--/.container-->
@@ -78,7 +72,7 @@
                     <a href="#" data-toggle="modal" data-target=".bs-example-modal-sm">
                         Регистрирай се
                     </a>
-                    /
+
                     <a href="#" data-toggle="modal" data-target=".bs-example-modal-lg">
                         Влез
                     </a>
@@ -161,7 +155,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="index.html">
-                    <img src="assets/images/logo/logo.png" alt="logo">
+                    <h2 style = color:white>Театър</h2>
                 </a>
             </div><!--/.navbar-header -->
 
@@ -176,7 +170,8 @@
                     <li><a href="/tickets_view">Билети</a></li>
                     <li><a href="/admin">Регистрирай се</a></li>
                     <li class="search">
-                        <form action="{{ route('performance.search') }}" method="GET">
+                        <form action="/performance" method="GET">
+
                             <label for="search" class="sr-only">
                                 Search
                             </label>
@@ -225,12 +220,11 @@
                     </div><!--/.hm-foot-title-->
                     <div class="footer-menu ">
                         <ul class="">
-                            <li><a href="index.html" >Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="services.html">Service</a></li>
-                            <li><a href="portfolio.html">Portfolio</a></li>
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="contact.html">Contact us</a></li>
+                            <li><a href="/" >Начална страница</a></li>
+                            <li><a href="/performance_view">Представления</a></li>
+                            <li><a href="/venues_view">Места за провеждане</a></li>
+                            <li><a href="/tickets_view">Билети</a></li>
+                            <li><a href="/admin">Регистрирай се</a></li>
                         </ul>
                     </div><!-- /.footer-menu-->
                 </div><!--/.hm-footer-widget-->

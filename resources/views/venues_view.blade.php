@@ -3,17 +3,7 @@
 @section('content')
     <div class="container">
         <div class="about-us-content">
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="single-about-us">
-                        <div class="about-us-txt">
-                            <h2>Места за провеждане</h2>
-                        </div><!--/.about-us-txt-->
-                    </div><!--/.single-about-us-->
-                </div><!--/.col-->
-                <div class="col-sm-6">
-                    <div class="single-about-us">
-                        <div class="about-us-img">
+
                             <div class="container">
                                 <table class="styled-table">
                                     <style>
@@ -38,11 +28,7 @@
                                     @endforeach
                                     </tbody>
                                 </table>
-                            </div><!--/.container<-->
-                        </div><!--/.about-us-img-->
-                    </div><!--/.single-about-us-->
-                </div><!--/.col-->
-            </div><!--/.row-->
+
         </div><!--/.about-us-content-->
     </div><!--/.container-->
 @endsection
@@ -151,7 +137,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="index.html">
-                    <img src="assets/images/logo/logo.png" alt="logo">
+                    <h2 style = color:white>Театър</h2>
                 </a>
             </div><!--/.navbar-header -->
 
@@ -166,8 +152,12 @@
                     <li><a href="/tickets_view">Билети</a></li>
                     <li><a href="/admin">Регистрирай се</a></li>
                     <li class="search">
-                        <form action="">
-                            <input type="text" name="search" placeholder="Търси....">
+                        <form action="/performance" method="GET">
+
+                            <label for="search" class="sr-only">
+                                Search
+                            </label>
+                            <input type="text" name="s" placeholder="Търси....">
                             <a href="#">
                                 <span class="lnr lnr-magnifier"></span>
                             </a>
