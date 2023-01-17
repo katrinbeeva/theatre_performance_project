@@ -7,7 +7,7 @@
                 <div class="col-sm-6">
                     <div class="single-about-us">
                         <div class="about-us-txt">
-                            <h2>Theatre</h2>
+                            <h2>Театрални представления</h2>
                         </div><!--/.about-us-txt-->
                     </div><!--/.single-about-us-->
                 </div><!--/.col-->
@@ -30,12 +30,12 @@
             <ul class="pull-left">
                 <li>
                     <a href="#">
-                        <i class="fa fa-phone" aria-hidden="true"></i> +992 563 542
+                        <i class="fa fa-phone" aria-hidden="true"></i> +359 87 817 3419
                     </a>
                 </li><!--/li-->
                 <li>
                     <a href="#">
-                        <i class="fa fa-envelope" aria-hidden="true"></i>info@mail.com
+                        <i class="fa fa-envelope" aria-hidden="true"></i>S21090109@sd.uni-vt.bg
                     </a>
                 </li><!--/li-->
             </ul><!--/ul-->
@@ -44,11 +44,11 @@
             <ul>
                 <li class="reg">
                     <a href="#" data-toggle="modal" data-target=".bs-example-modal-sm">
-                        Register
+                        Регистрирай се
                     </a>
                     /
                     <a href="#" data-toggle="modal" data-target=".bs-example-modal-lg">
-                        Log in
+                        Вход
                     </a>
 
                     <!-- small modal -->
@@ -65,12 +65,12 @@
                                         Sign In
                                     </h4>
                                     <form class="sm-frm" style="padding:25px">
-                                        <label>Name :</label>
+                                        <label>Име :</label>
                                         <input type="text" class="form-control" placeholder="Enter Email">
-                                        <label>Passoward :</label>
+                                        <label>Парола :</label>
                                         <input type="text" class="form-control" placeholder="Enter Passoward">
-                                        <label><input type="checkbox" name="personality"> Remenber Me</label>
-                                        <button type="button" class="btn btn-default pull-right">Submit</button>
+                                        <label><input type="checkbox" name="personality"> Запомни ме</label>
+                                        <button type="button" class="btn btn-default pull-right">Потвърди</button>
                                     </form>
                                 </div>
                             </div>
@@ -137,12 +137,12 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="/">Home</a>
+                        <a href="/">Начална страница</a>
                     </li>
-                    <li><a href="/performance_view">Performance</a></li>
-                    <li><a href="/venues_view">Venues</a></li>
-                    <li><a href="/tickets_view">Tickets</a></li>
-                    <li><a href="/admin">SignUp</a></li>
+                    <li><a href="/performance_view">Театрални представления</a></li>
+                    <li><a href="/venues_view">Места за провеждане</a></li>
+                    <li><a href="/tickets_view">Билети</a></li>
+                    <li><a href="/admin">Регистрирай се</a></li>
                     <li class="search">
                         <form action="">
                             <input type="text" name="search" placeholder="Search....">

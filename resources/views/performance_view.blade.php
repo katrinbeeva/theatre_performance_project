@@ -7,7 +7,7 @@
                 <div class="col-sm-6">
                     <div class="single-about-us">
                         <div class="about-us-txt">
-                            <h2>Performance</h2>
+                            <h2>Представления</h2>
                         </div><!--/.about-us-txt-->
                     </div><!--/.single-about-us-->
                 </div><!--/.col-->
@@ -23,12 +23,12 @@
                                     </style>
                                     <thead>
                                     <tr>
-                                        <th>Performance image</th>
-                                        <th>Name of performance</th>
-                                        <th>Date of performance</th>
-                                        <th>Theatre</th>
-                                        <th>Location</th>
-                                        <th>City</th>
+                                        <th>Снимка на представлението</th>
+                                        <th>Име на представлението</th>
+                                        <th>Дата на представлението </th>
+                                        <th>Театър</th>
+                                        <th>Адрес</th>
+                                        <th>Град</th>
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -38,17 +38,10 @@
                                             <td>{{$performance->name_of_performance}}</td>
                                             <td>{{$performance->performance_date}}</td>
                                             <td>
-                                                @foreach($performances_venues as $performance_venue)
-                                                    @if($performance_venue->performance_id == $performance->id)
-                                                        @foreach($venues as $venue)
-                                                            @if($performance_venue->venue_id == $venue->id)
-                                                                {{ $venue->name_of_theatre}}
-                                                                {{ $venue->location }}
-                                                                {{ $venue->city }}
-                                                            @endif
-                                                        @endforeach
-                                                    @endif
-
+                                                @foreach($performance->venues as $venue)
+                                                    {{ $venue->name_of_theatre}}
+                                                    {{ $venue->location }}
+                                                    {{ $venue->city }}
                                                 @endforeach
                                             </td>
                                         </tr>
@@ -83,11 +76,11 @@
             <ul>
                 <li class="reg">
                     <a href="#" data-toggle="modal" data-target=".bs-example-modal-sm">
-                        Register
+                        Регистрирай се
                     </a>
                     /
                     <a href="#" data-toggle="modal" data-target=".bs-example-modal-lg">
-                        Log in
+                        Влез
                     </a>
 
                     <!-- small modal -->
@@ -176,18 +169,18 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="/">Home</a>
+                        <a href="/">Начална странница</a>
                     </li>
-                    <li><a href="/performance_view">Performance</a></li>
-                    <li><a href="/venues_view">Venues</a></li>
-                    <li><a href="/tickets_view">Tickets</a></li>
-                    <li><a href="/admin">SignUp</a></li>
+                    <li><a href="/performance_view">Представления</a></li>
+                    <li><a href="/venues_view">Места за провеждане</a></li>
+                    <li><a href="/tickets_view">Билети</a></li>
+                    <li><a href="/admin">Регистрирай се</a></li>
                     <li class="search">
                         <form action="{{ route('performance.search') }}" method="GET">
                             <label for="search" class="sr-only">
                                 Search
                             </label>
-                            <input type="text" name="s" placeholder="Search....">
+                            <input type="text" name="s" placeholder="Търси....">
                             <a href="#">
                                 <span class="lnr lnr-magnifier"></span>
                             </a>

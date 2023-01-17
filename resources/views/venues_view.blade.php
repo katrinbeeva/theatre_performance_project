@@ -7,7 +7,7 @@
                 <div class="col-sm-6">
                     <div class="single-about-us">
                         <div class="about-us-txt">
-                            <h2>Venues</h2>
+                            <h2>Места за провеждане</h2>
                         </div><!--/.about-us-txt-->
                     </div><!--/.single-about-us-->
                 </div><!--/.col-->
@@ -23,9 +23,9 @@
                                     </style>
                                     <thead>
                                     <tr>
-                                        <th>Name of theatre</th>
-                                        <th>Location</th>
-                                        <th>City</th>
+                                        <th>Име на театър</th>
+                                        <th>Адрес</th>
+                                        <th>Град</th>
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -66,11 +66,11 @@
             <ul>
                 <li class="reg">
                     <a href="#" data-toggle="modal" data-target=".bs-example-modal-sm">
-                        Register
+                        Регистрирай се
                     </a>
                     /
                     <a href="#" data-toggle="modal" data-target=".bs-example-modal-lg">
-                        Log in
+                        Вход
                     </a>
 
                     <!-- small modal -->
@@ -90,7 +90,7 @@
                                         <label>Name :</label>
                                         <input type="text" class="form-control" placeholder="Enter Email">
                                         <label>Passoward :</label>
-                                        <input type="text" class="form-control" placeholder="Enter Passoward">
+                                        <input type="text" class="form-control" placeholder="Enter Password">
                                         <label><input type="checkbox" name="personality"> Remenber Me</label>
                                         <button type="button" class="btn btn-default pull-right">Submit</button>
                                     </form>
@@ -109,7 +109,7 @@
 											 		<i class="fa fa-close"></i>
 											 	</span>
                                     </button>
-                                    <h4 class="modal-title" id="myLargeModalLabel">Register</h4>
+                                    <h4 class="modal-title" id="myLargeModalLabel">Регистрирай се</h4>
                                     <form class="lg-frm" style="padding:25px">
                                         <label>Name :</label>
                                         <input type="text" class="form-control" placeholder="Enter Name">
@@ -161,13 +161,13 @@
                     <li>
                         <a href="/">Home</a>
                     </li>
-                    <li><a href="/performance_view">Performance</a></li>
-                    <li><a href="/venues_view">Venues</a></li>
-                    <li><a href="/tickets_view">Tickets</a></li>
-                    <li><a href="/admin">SignUp</a></li>
+                    <li><a href="/performance_view">Представления</a></li>
+                    <li><a href="/venues_view">Места за провеждане</a></li>
+                    <li><a href="/tickets_view">Билети</a></li>
+                    <li><a href="/admin">Регистрирай се</a></li>
                     <li class="search">
                         <form action="">
-                            <input type="text" name="search" placeholder="Search....">
+                            <input type="text" name="search" placeholder="Търси....">
                             <a href="#">
                                 <span class="lnr lnr-magnifier"></span>
                             </a>
@@ -215,10 +215,10 @@
                             <li>
                                 <a href="/">Home</a>
                             </li>
-                            <li><a href="/admin">Performance</a></li>
-                            <li><a href="/venues_view">Venues</a></li>
-                            <li><a href="/tickets_view">Tickets</a></li>
-                            <li><a href="/admin">SignUp</a></li>
+                            <li><a href="/admin">Представления</a></li>
+                            <li><a href="/venues_view">Места за провеждане</a></li>
+                            <li><a href="/tickets_view">Билети</a></li>
+                            <li><a href="/admin">Регистрирай се</a></li>
                         </ul>
                     </div><!-- /.footer-menu-->
                 </div><!--/.hm-footer-widget-->

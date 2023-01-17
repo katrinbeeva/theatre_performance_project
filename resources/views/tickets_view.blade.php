@@ -7,7 +7,7 @@
                 <div class="col-sm-6">
                     <div class="single-about-us">
                         <div class="about-us-txt">
-                            <h2>Tickets</h2>
+                            <h2>Билети</h2>
                         </div><!--/.about-us-txt-->
                     </div><!--/.single-about-us-->
                 </div><!--/.col-->
@@ -23,8 +23,8 @@
                                     </style>
                                     <thead>
                                     <tr>
-                                        <th>Type of tickets</th>
-                                        <th>Price</th>
+                                        <th>Вид билет</th>
+                                        <th>Цена</th>
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -64,11 +64,11 @@
             <ul>
                 <li class="reg">
                     <a href="#" data-toggle="modal" data-target=".bs-example-modal-sm">
-                        Register
+                        Регистрирай се
                     </a>
                     /
                     <a href="#" data-toggle="modal" data-target=".bs-example-modal-lg">
-                        Log in
+                        Вход
                     </a>
 
                     <!-- small modal -->
@@ -157,15 +157,15 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="/">Home</a>
+                        <a href="/">Начална страница</a>
                     </li>
-                    <li><a href="/performance_view">Performance</a></li>
-                    <li><a href="/venues_view">Venues</a></li>
-                    <li><a href="/tickets_view">Tickets</a></li>
-                    <li><a href="/admin">SignUp</a></li>
+                    <li><a href="/performance_view">Представления</a></li>
+                    <li><a href="/venues_view">Места за провеждане </a></li>
+                    <li><a href="/tickets_view">Билети</a></li>
+                    <li><a href="/admin"> Регистрирай се</a></li>
                     <li class="search">
                         <form action="">
-                            <input type="text" name="search" placeholder="Search....">
+                            <input type="text" name="search" placeholder="Търси....">
                             <a href="#">
                                 <span class="lnr lnr-magnifier"></span>
                             </a>
