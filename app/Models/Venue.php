@@ -9,11 +9,6 @@ class Venue extends Model
 {
     use CrudTrait;
 
-    /*
-    |--------------------------------------------------------------------------
-    | GLOBAL VARIABLES
-    |--------------------------------------------------------------------------
-    */
 
     protected $table = 'venues';
     // protected $primaryKey = 'id';

@@ -211,7 +211,7 @@
             <div class=" col-md-2 col-sm-6 col-xs-12">
                 <div class="hm-footer-widget">
                     <div class="hm-foot-title">
-                        <h4>Useful Links</h4>
+                        <h4>Полезни линкове</h4>
                     </div><!--/.hm-foot-title-->
                     <div class="footer-menu ">
                         <ul class="">

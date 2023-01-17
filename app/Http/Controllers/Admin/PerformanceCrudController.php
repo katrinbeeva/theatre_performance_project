@@ -77,17 +77,6 @@ class PerformanceCrudController extends CrudController
     {
         $this->crud->set('show.setFromDb', false);
         $this->crud->addColumns($this->getFieldsData(TRUE));
-
-
-
-
-
-
-        /**
-         * Columns can be defined using the fluent syntax or array syntax:
-         * - CRUD::column('price')->type('number');
-         * - CRUD::addColumn(['name' => 'price', 'type' => 'number']);
-         */
     }
 
     /**
@@ -104,14 +93,6 @@ class PerformanceCrudController extends CrudController
         CRUD::field('performance_date');
         CRUD::field('image');
         CRUD::field('venue_id');
-
-
-
-        /**
-         * Fields can be defined using the fluent syntax or array syntax:
-         * - CRUD::field('price')->type('number');
-         * - CRUD::addField(['name' => 'price', 'type' => 'number']));
-         */
     }
 
     /**

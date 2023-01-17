@@ -9,11 +9,6 @@ class Ticket extends Model
 {
     use CrudTrait;
 
-    /*
-    |--------------------------------------------------------------------------
-    | GLOBAL VARIABLES
-    |--------------------------------------------------------------------------
-    */
 
     protected $table = 'tickets';
     // protected $primaryKey = 'id';
@@ -23,17 +18,7 @@ class Ticket extends Model
     // protected $hidden = [];
     // protected $dates = [];
 
-    /*
-    |--------------------------------------------------------------------------
-    | FUNCTIONS
-    |--------------------------------------------------------------------------
-    */
 
-    /*
-    |--------------------------------------------------------------------------
-    | RELATIONS
-    |--------------------------------------------------------------------------
-    */
     public function Performance()
     {
         return $this->belongsToMany(Tag::class, 'performance_ticket','performance_id', 'ticket_id');
