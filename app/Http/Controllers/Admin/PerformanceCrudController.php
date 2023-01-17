@@ -61,7 +61,8 @@ class PerformanceCrudController extends CrudController
                 'type' => ($show ? 'view' : 'upload'),
                 'view' => 'partials/image',
                 'upload' => true,
-            ]
+            ],
+
 
         ];
     }
@@ -102,7 +103,7 @@ class PerformanceCrudController extends CrudController
         CRUD::field('name_of_performance');
         CRUD::field('performance_date');
         CRUD::field('image');
-        CRUD::field('venues_id');
+        CRUD::field('venue_id');
 
 
 

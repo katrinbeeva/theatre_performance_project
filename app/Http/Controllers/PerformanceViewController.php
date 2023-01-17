@@ -20,11 +20,12 @@ class PerformanceViewController extends Controller
 
     public function performance()
     {
+        $performances_venues = DB::table('performance_venue')->select('performance_id','venue_id')->get();
         $performances = DB::table('performance')->select('name_of_performance', 'performance_date','image')->get();
         $venues = DB::table('venues')->select('name_of_theatre','location','city')->get();
 
         return (
-        view('performance_view', ['performances' => $performances, 'venues' => $venues]));
+        view('performance_view', ['performances' => $performances, 'venues' => $venues, 'performances_venues'=>$performances_venues]));
     }
 
     public function search(Request $request)

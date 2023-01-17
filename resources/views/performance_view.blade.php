@@ -34,12 +34,21 @@
                                     <tbody>
                                     @foreach($performances as $performance)
                                         <tr>
-                                            <td><img src="{{$performance->image}}" style="width: 140px"></td>
+                                            <td><img src="{{$performance->image}}" style="width: 120px"></td>
                                             <td>{{$performance->name_of_performance}}</td>
                                             <td>{{$performance->performance_date}}</td>
                                             <td>
-                                                @foreach ($performance->venues as $venue)
-                                                    <li>Venues: {{ $venue->location }}</li>
+                                                @foreach($performances_venues as $performance_venue)
+                                                    @if($performance_venue->performance_id == $performance->id)
+                                                        @foreach($venues as $venue)
+                                                            @if($performance_venue->venue_id == $venue->id)
+                                                                {{ $venue->name_of_theatre}}
+                                                                {{ $venue->location }}
+                                                                {{ $venue->city }}
+                                                            @endif
+                                                        @endforeach
+                                                    @endif
+
                                                 @endforeach
                                             </td>
                                         </tr>
