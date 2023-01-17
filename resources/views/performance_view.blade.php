@@ -38,17 +38,8 @@
                                             <td>{{$performance->name_of_performance}}</td>
                                             <td>{{$performance->performance_date}}</td>
                                             <td>
-                                                @foreach($performances_venues as $performance_venue)
-                                                    @if($perfomance_venue->performance_id == $performance->id)
-                                                        @foreach($venues as $venue)
-                                                            @if($performance_venue->venue_id == $venue->id)
-                                                                {{ $venue->name_of_theatre }}
-                                                                {{ $venue->location }}
-                                                                {{ $venue->city }}
-                                                            @endif
-                                                        @endforeach
-                                                    @endif
-
+                                                @foreach ($performance->venues as $venue)
+                                                    <li>Venues: {{ $venue->location }}</li>
                                                 @endforeach
                                             </td>
                                         </tr>

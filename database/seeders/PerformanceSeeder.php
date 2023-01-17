@@ -22,97 +22,97 @@ class PerformanceSeeder extends Seeder
             'name_of_performance'=> 'Забранените фокуси на Ненчо',
             'performance_date' => '2023-01-23',
             'image'=>'assets/image for performances/Забранените фокуси на Ненчо.jpeg',
-           // 'venues_id'=>1
+                'venue_id'=>'1'
             ],
             [
                 'image'=>'assets/image for performances/Лисичета.jpg',
                 'name_of_performance'=> 'Лисичета',
                 'performance_date' => '2023-01-27',
-               // 'venues_id'=>1
+                'venue_id'=>'1'
             ],
             [
                 'image'=>'assets/image for performances/Гласове под наем.jpeg',
                 'name_of_performance'=> 'Гласове под наем',
                 'performance_date' => '2023-07-23',
-              //  'venues_id'=>2
+                'venue_id'=>'2'
             ],
             [
                 'image'=>'assets/image for performances/Народът на Вазов.jpeg',
                 'name_of_performance'=> 'Народът на Вазов',
                 'performance_date' => '2023-02-23',
-               // 'venues_id'=>2
+                'venue_id'=>'2'
             ],
             [
             'image'=>'assets/image for performances/Облог.jpeg',
                 'name_of_performance'=> 'Облог',
                 'performance_date' => '2023-01-18',
-              //  'venues_id'=>3
+                'venue_id'=>'3'
             ],
             [
                 'image'=>'assets/image for performances/Сапунена фантазия.jpeg',
                 'name_of_performance'=> 'Сапунена фантазия',
                 'performance_date' => '2023-03-23',
-                //'venues_id'=>11
+                'venue_id'=>'1'
             ],
             [
             'image'=>'assets/image for performances/Синът.jpeg',
                 'name_of_performance'=> 'Синът',
                 'performance_date' => '2023-05-07',
-               // 'venues_id'=>4
+                'venue_id'=>'4'
             ],
             [
                 'image'=>'assets/image for performances/Три високи жени.jpg',
                 'name_of_performance'=> 'Три високи жени',
                 'performance_date' => '2023-04-12',
-              //  'venues_id'=>4
+               'venue_id'=>'4'
             ],
             [
             'image'=>'assets/image for performances/Хитър Петър.jpeg',
                 'name_of_performance'=> 'Хитър Петър',
                 'performance_date' => '2023-05-02',
-              //  'venues_id'=>12
+               'venue_id'=>'1'
             ],
             [
                 'image'=>'assets/image for performances/Хъшове.jpeg',
                 'name_of_performance'=> 'Хъшове',
                 'performance_date' => '2023-03-23',
-               // 'venues_id'=>11
+                'venue_id'=>'1'
             ],
             [
             'image'=>'assets/image for performances/Догодина по същото време.jpeg',
                 'name_of_performance'=> 'Догодина по същото време',
                 'performance_date' => '2023-01-18',
-               // 'venues_id'=>6
+                'venue_id'=>'6'
             ],
             [
                 'image'=>'assets/image for performances/Контрабасът.jpg',
                 'name_of_performance'=> 'Контрабасът',
                 'performance_date' => '2023-06-01',
-                //'venues_id'=>6
+                'venue_id'=>'6'
             ],
             [
                 'image'=>'assets/image for performances/Веселата карета.jpeg',
                 'name_of_performance'=> 'Веселата карета',
                 'performance_date' => '2023-02-19',
-              //  'venues_id'=>12
+               'venue_id'=>'1'
             ],
             [
                 'image'=>'assets/image for performances/Пиано в тревата.jpeg',
                 'name_of_performance'=> 'Пиано в тревата',
                 'performance_date' => '2023-01-19',
-               // 'venues_id'=>8
+                'venue_id'=>'8'
             ],
             [
             'image'=>'assets/image for performances/Джак и бобеното стъбло.jpeg',
                 'name_of_performance'=> 'Джак и бобеното стъбло',
                 'performance_date' => '2023-01-24',
-               // 'venues_id'=>9
+                'venue_id'=>'9'
             ],
             [
                 'image'=>'assets/image for performances/Зимата на нашето недоволство.jpeg',
                 'name_of_performance'=> 'Зимата на нашето недоволство',
                 'performance_date' => '2023-01-24',
-              //  'venues_id'=>10
+                'venue_id'=>'12'
             ],
         ]);
 

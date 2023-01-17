@@ -19,6 +19,20 @@ class PerformanceCrudController extends CrudController
     use \Backpack\CRUD\app\Http\Controllers\Operations\DeleteOperation;
     use \Backpack\CRUD\app\Http\Controllers\Operations\ShowOperation;
 
+    /**
+     * Configure the CrudPanel object. Apply settings to all operations.
+     *
+     * @return void
+     */
+    public function setup()
+    {
+        CRUD::setModel(\App\Models\Performance::class);
+        CRUD::setRoute(config('backpack.base.route_prefix') . '/performance');
+        CRUD::setEntityNameStrings('performance', 'performances');
+
+        $this->crud->addFields($this->getFieldsData());
+    }
+
     private function getFieldsData($show = FALSE) {
         return [
             [
@@ -38,9 +52,7 @@ class PerformanceCrudController extends CrudController
 // optional
                 'entity'    => 'venues', // the method that defines the relationship in your Model
                 'model'     => "App\Models\Venue", // foreign key model
-                'attribute' => 'name_of_theatre', // foreign key attribute that is shown to user
-                'attribute' => 'location', // foreign key attribute that is shown to user
-                'attribute' => 'city', // foreign key attribute that is shown to user
+                'attribute' => 'location', 'city', 'name_of_theatre', // foreign key attribute that is shown to user
                 'pivot'     => true, // on create&update, do you need to add/delete pivot table entries?
             ],
             [
@@ -52,23 +64,6 @@ class PerformanceCrudController extends CrudController
             ]
 
         ];
-    }
-
-
-
-
-    /**
-     * Configure the CrudPanel object. Apply settings to all operations.
-     *
-     * @return void
-     */
-    public function setup()
-    {
-        CRUD::setModel(\App\Models\Performance::class);
-        CRUD::setRoute(config('backpack.base.route_prefix') . '/performance');
-        CRUD::setEntityNameStrings('performance', 'performances');
-
-        $this->crud->addFields($this->getFieldsData());
     }
 
     /**
@@ -107,7 +102,7 @@ class PerformanceCrudController extends CrudController
         CRUD::field('name_of_performance');
         CRUD::field('performance_date');
         CRUD::field('image');
-        CRUD::field('venue_id');
+        CRUD::field('venues_id');
 
 
 
