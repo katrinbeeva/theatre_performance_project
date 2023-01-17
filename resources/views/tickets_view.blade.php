@@ -5,11 +5,18 @@
         <div class="about-us-content">
             <div class="row">
                 <div class="col-sm-6">
-                    <div class="single-about-us">
-                        <div class="about-us-txt">
+
                             <h2>Билети</h2>
-                        </div><!--/.about-us-txt-->
-                    </div><!--/.single-about-us-->
+                            <br>
+                            <br>
+                            <p>
+                                Скъпи приятели, поради големия интерес към коледните ни спектакли и бързото изчерпване на билетите,<br>
+                                с радост ви съобщаваме, че на 20 януари, от 12.30 ч.,<br>
+                                в Народен театър "Иван Вазов" ще изиграем за вас още едно представление на спектакъла "Забранените фокуси на Ненчо"!<br>
+                                Ще се радваме да бъдем заедно и да си направим вълшебно празненство!<br>
+                                Побързайте и вземете билетите си тук:</p>
+
+
                 </div><!--/.col-->
                 <div class="col-sm-6">
                     <div class="single-about-us">
@@ -211,7 +218,8 @@
             <div class=" col-md-2 col-sm-6 col-xs-12">
                 <div class="hm-footer-widget">
                     <div class="hm-foot-title">
-                        <h4>Полезни линкове</h4>
+                        <h4>Полезни линкове
+                        </h4>
                     </div><!--/.hm-foot-title-->
                     <div class="footer-menu ">
                         <ul class="">
