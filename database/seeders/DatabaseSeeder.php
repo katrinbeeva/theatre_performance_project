@@ -26,6 +26,7 @@ class DatabaseSeeder extends Seeder
             VenueSeeder::class,
             TicketSeeder::class,
             PerformanceVenueSeeder::class,
+            UserSeeder::class,
         ]);
     }
 }
